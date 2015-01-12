@@ -11,4 +11,13 @@
         android:id="@+id/jpgview"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:id="@+id/BT1"
+        android:layout_alignTop="@+id/jpgview"
+        android:layout_alignParentStart="true"
+        android:onClick="buttontest" />
 </RelativeLayout>
