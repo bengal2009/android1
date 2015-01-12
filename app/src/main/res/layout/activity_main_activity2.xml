@@ -13,12 +13,44 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="BT3"
         android:id="@+id/BT3"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_marginTop="110dp"
         android:nestedScrollingEnabled="true"
         android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BT4"
+        android:id="@+id/BT4"
+        android:nestedScrollingEnabled="true"
+        android:clickable="true"
+        android:layout_above="@+id/BT5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BT5"
+        android:id="@+id/BT5"
+        android:nestedScrollingEnabled="true"
+        android:clickable="true"
+        android:layout_below="@+id/BT3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="102dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BT6"
+        android:id="@+id/BT6"
+        android:nestedScrollingEnabled="true"
+        android:clickable="true"
+        android:layout_alignLeft="@+id/BT4"
+        android:layout_alignBottom="@+id/BT5"
+        android:layout_alignEnd="@+id/BT4" />
 
 </RelativeLayout>
