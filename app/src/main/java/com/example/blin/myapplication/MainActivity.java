@@ -29,13 +29,15 @@ private int count;
        Button bt = (Button)findViewById(R.id.BT1);
         if(!Flag) {
             bt.setBackgroundColor(Color.rgb(0, 122, 0));
-            SwitchPict("2.JPG");
+//            SwitchPict("2.JPG");
+            SwitchPict("1.JPG");
             Flag=true;
         }
         else
         {
             bt.setBackgroundColor(Color.CYAN);
-            SwitchPict("benny1.JPG");
+//            SwitchPict("benny1.JPG");
+            SwitchPict("P1020072.JPG");
             Flag=false;
 
         }
@@ -74,7 +76,8 @@ private int count;
 
 
           ImageView jpgView = (ImageView)findViewById(R.id.jpgview);
-        String myJpgPath = Environment.getExternalStorageDirectory().getPath()+ "/benny1.JPG";
+//        String myJpgPath = Environment.getExternalStorageDirectory().getPath()+ "/benny1.JPG";
+        String myJpgPath = Environment.getExternalStorageDirectory().getPath()+ "/1.JPG";
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 2;
         Bitmap bm = BitmapFactory.decodeFile(myJpgPath, options);
