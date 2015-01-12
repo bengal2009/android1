@@ -1,9 +1,13 @@
 package com.example.blin.myapplication;
 
-import android.support.v7.app.ActionBarActivity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Environment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +16,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView jpgView = (ImageView)findViewById(R.id.jpgview);
+
+
+
+        String myJpgPath = Environment.getExternalStorageDirectory().getPath()+ "/benny1.JPG";
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 2;
+        Bitmap bm = BitmapFactory.decodeFile(myJpgPath, options);
+        jpgView.setImageBitmap(bm);
     }
 
 
