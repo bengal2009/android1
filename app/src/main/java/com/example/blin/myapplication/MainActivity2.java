@@ -67,6 +67,7 @@ public class MainActivity2 extends ActionBarActivity {
                 android.R.drawable.ic_dialog_info).setView(
                 new EditText(this)).setPositiveButton("确定", null)
                 .setNegativeButton("取消", null).show();
+        //Test
 
     }
 
